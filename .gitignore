@@ -1,0 +1,65 @@
+# ---------------------------------------------------------------
+# Leftover files kept locally but not part of the project
+# (stock Vite template at the root, old Flutter zip, root copy of the deck)
+# ---------------------------------------------------------------
+/src/
+/public/
+/index.html
+/eslint.config.js
+/vite.config.js
+/package.json
+/package-lock.json
+/emd_ts_flutter.zip
+/EMD-TS-Hackathon-Deck.pptx
+
+# ---------------------------------------------------------------
+# Dependencies & build output
+# ---------------------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+dev-dist/
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.gradle/
+local.properties
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local SQLite databases (contain real patient test data - never commit)
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------------------------------------------------------------
+# Secrets & environment
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.local
+*.jks
+*.keystore
+key.properties
+
+# ---------------------------------------------------------------
+# Editors, OS & logs
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+/emd-ts/package-lock.json

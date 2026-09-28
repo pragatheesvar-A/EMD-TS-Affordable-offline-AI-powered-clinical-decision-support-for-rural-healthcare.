@@ -1,0 +1,86 @@
+import type { Language } from '../types';
+
+export const translations: Record<Language, Record<string, string>> = {
+  en: {
+    appName: 'EMD-TS',
+    appFullName: 'Edge Medical Diagnostics & Telemedicine System',
+    tagline: 'Better Information. Faster Screening. Connected Care.',
+    offline: 'OFFLINE MODE',
+    online: 'ONLINE',
+    nav_dashboard: 'Dashboard',
+    nav_registration: 'Patient Registration',
+    nav_monitoring: 'Live Monitoring',
+    nav_screening: 'AI Screening',
+    nav_timeline: 'Patient Timeline',
+    nav_copilot: 'Clinical Copilot',
+    nav_referral: 'Smart Referral',
+    nav_doctor: 'Doctor Dashboard',
+    nav_payment: 'Consultation & Payment',
+    nav_security: 'Security Center',
+    nav_blockchain: 'Blockchain Audit',
+    nav_architecture: 'Architecture',
+    nav_business: 'Business Model',
+    nav_settings: 'Settings',
+    totalPatientsToday: 'Total Patients Today',
+    activeMonitoring: 'Active Monitoring',
+    highPriority: 'High Priority',
+    pendingReferrals: 'Pending Referrals',
+    startNewScreening: 'Start New Screening',
+    runHackathonDemo: 'Run Hackathon Demo',
+    demoData: 'DEMO DATA',
+    chestPainDemo: 'Patient has chest pain for two days.',
+    symptom: 'Symptom',
+    duration: 'Duration',
+    chestPain: 'Chest Pain',
+    days: 'Days',
+  },
+  ta: {
+    appName: 'EMD-TS',
+    appFullName: 'விளிம்பு மருத்துவ கண்டறிதல் & தொலைமருத்துவ அமைப்பு',
+    tagline: 'சிறந்த தகவல். வேகமான பரிசோதனை. இணைக்கப்பட்ட பராமரிப்பு.',
+    offline: 'ஆஃப்லைன் பயன்முறை',
+    online: 'ஆன்லைன்',
+    nav_dashboard: 'டாஷ்போர்டு',
+    nav_registration: 'நோயாளி பதிவு',
+    nav_monitoring: 'நேரடி கண்காணிப்பு',
+    nav_screening: 'AI பரிசோதனை',
+    nav_timeline: 'நோயாளி காலவரிசை',
+    nav_copilot: 'மருத்துவ உதவியாளர்',
+    nav_referral: 'ஸ்மார்ட் பரிந்துரை',
+    nav_doctor: 'மருத்துவர் டாஷ்போர்டு',
+    nav_payment: 'மருத்துவ ஆலோசனை & கட்டணம்',
+    nav_security: 'பாதுகாப்பு மையம்',
+    nav_blockchain: 'பிளாக்செயின் தணிக்கை',
+    nav_architecture: 'கட்டமைப்பு',
+    nav_business: 'வணிக மாதிரி',
+    nav_settings: 'அமைப்புகள்',
+    totalPatientsToday: 'இன்று மொத்த நோயாளிகள்',
+    activeMonitoring: 'செயலில் கண்காணிப்பு',
+    highPriority: 'உயர் முன்னுரிமை',
+    pendingReferrals: 'நிலுவையிலுள்ள பரிந்துரைகள்',
+    startNewScreening: 'புதிய பரிசோதனையைத் தொடங்கு',
+    runHackathonDemo: 'ஹேக்கத்தான் டெமோவை இயக்கு',
+    demoData: 'டெமோ தரவு',
+    chestPainDemo: 'நோயாளிக்கு இரண்டு நாட்களாக மார்பு வலி உள்ளது.',
+    symptom: 'அறிகுறி',
+    duration: 'கால அளவு',
+    chestPain: 'மார்பு வலி',
+    days: 'நாட்கள்',
+  },
+};
+
+export function t(lang: Language, key: string): string {
+  return translations[lang]?.[key] ?? translations.en[key] ?? key;
+}
+
+// Fixed demonstration example used on the Multilingual page (structured
+// extraction is simulated locally — no external NLP service is called).
+export const MULTILINGUAL_DEMO = {
+  english: 'Patient has chest pain for two days.',
+  tamil: 'நோயாளிக்கு இரண்டு நாட்களாக மார்பு வலி உள்ளது.',
+  transliteration: 'Patient-ku rendu naala chest pain irukku.',
+  extraction: {
+    symptom: 'Chest Pain',
+    duration: '2 Days',
+  },
+};

@@ -1,0 +1,56 @@
+"""Static seed data for the three hackathon demo patients (Ravi Kumar,
+Meena, Arun) -- mirrors src/lib/demoData.ts in the web prototype so
+both implementations tell the same demo story."""
+
+from __future__ import annotations
+
+DEMO_PATIENTS = [
+    {
+        "id": "PAT-1001",
+        "name": "Ravi Kumar",
+        "age": 56,
+        "gender": "Male",
+        "phone": "+91 98765 43210",
+        "village": "Perambalur",
+        "symptoms": "Chest discomfort and breathing difficulty for two days",
+        "duration": "2 Days",
+        "known_conditions": "Hypertension",
+        "medications": "Amlodipine 5mg",
+        "allergies": "None known",
+        "vitals": {"heartRate": 118, "spo2": 88, "temperature": 38.5, "activity": "Light Activity", "mode": "HIGH_RISK"},
+        "ecg_abnormal": True,
+        "spo2_trend": [98, 96, 94, 91, 88],
+    },
+    {
+        "id": "PAT-1002",
+        "name": "Meena",
+        "age": 43,
+        "gender": "Female",
+        "phone": "+91 98765 11223",
+        "village": "Thuraiyur",
+        "symptoms": "Fever and mild cough for one day",
+        "duration": "1 Day",
+        "known_conditions": "None",
+        "medications": "None",
+        "allergies": "Penicillin",
+        "vitals": {"heartRate": 108, "spo2": 93, "temperature": 38.1, "activity": "Resting", "mode": "NORMAL"},
+        "ecg_abnormal": False,
+        "spo2_trend": [97, 96, 95, 94],
+    },
+    {
+        "id": "PAT-1003",
+        "name": "Arun",
+        "age": 61,
+        "gender": "Male",
+        "phone": "+91 98765 99887",
+        "village": "Kunnam",
+        "symptoms": "Routine screening, no acute complaints",
+        "duration": "N/A",
+        "known_conditions": "Type 2 Diabetes (controlled)",
+        "medications": "Metformin 500mg",
+        "allergies": "None known",
+        "vitals": {"heartRate": 76, "spo2": 98, "temperature": 36.7, "activity": "Resting", "mode": "NORMAL"},
+        "ecg_abnormal": False,
+        "spo2_trend": [98, 98, 97, 98],
+    },
+]
