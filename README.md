@@ -37,7 +37,7 @@ EMD-TS connects sensing, screening, referral and doctor review in **one offline-
 
 ```
 .
-├── emd-ts/emd-ts/   Web app — React 19 + TypeScript + Vite, installable PWA (Capacitor Android wrapper included)
+├── frontend/        Web app — React 19 + TypeScript + Vite, installable PWA (Capacitor Android wrapper included)
 ├── backend/         REST API — Python, FastAPI + SQLite
 ├── mobile/          Mobile app — Flutter (Dart)
 └── docs/            Hackathon pitch deck
@@ -80,7 +80,7 @@ python run.py
 In a second terminal:
 
 ```bash
-cd emd-ts/emd-ts
+cd frontend
 npm install
 npm run dev
 ```
@@ -118,7 +118,7 @@ cd backend
 pytest
 
 # Web app — type check and production build
-cd emd-ts/emd-ts
+cd frontend
 npm run build
 ```
 
@@ -165,7 +165,7 @@ See <http://localhost:8080/docs> for the complete, interactive reference.
 ## Documentation
 
 - [Backend README](backend/README.md)
-- [Web app README](emd-ts/emd-ts/README.md)
+- [Web app README](frontend/README.md)
 - [Mobile app README](mobile/README.md)
 - [Hackathon pitch deck](docs/EMD-TS-Hackathon-Deck.pptx)
 
